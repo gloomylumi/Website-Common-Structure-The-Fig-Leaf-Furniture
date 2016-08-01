@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Maitree:400,500,700|Proza+Libre:600);
+/*
+	STYLE.CSS:
+	One stylesheet to rule them all.
+
+	selector { property:value }
+
+*/
+html {
+	font-size: 62.5%
+}
+
+header {
+	background-color: #592326; /*rose*/
+	height: 150px;
+	padding: 10px;
+	margin: auto;
+}
+
+footer {
+		background-color: #592326; /*rose*/
+		color: #d1a38d; /*taupe*/
+    font-family: 'Maitree', serif;
+		font-size: 1.6rem;
+		text-align: center;
+		height: 125px;
+		padding: 15px;
+		margin: auto;
+}
+nav {
+	background-color: #470f13; /*maroon*/
+}
+#top-nav {
+	text-align: center;
+}
+#top-nav ul {
+	margin:0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+#top-nav ul li {
+	float: left;
+	padding: 17px 15px 12px 15px;
+	display: block;
+}
+#top-nav ul li a {
+	font-size: 1.8rem;
+	color: #ffd1bb; /*cream*/
+  font-family: 'Maitree', serif;
+	text-decoration: none;
+}
+
+
+main {
+	background-color: #d1a38d; /*taupe*/
+}
+
+#content {
+	width: 990px;
+	min-height: 380px;
+	margin: auto;
+	padding: 10px 0;
+}
+
+.wrapper {
+	width: 960px;
+	margin: auto;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2.2rem;
+	font-family: 'Proza Libre', sans-serif;
+	color: #470f13; /*maroon*/
+	padding: 6px;
+}
