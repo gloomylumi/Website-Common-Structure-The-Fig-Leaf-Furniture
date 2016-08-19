@@ -1,39 +1,39 @@
-@import url(https://fonts.googleapis.com/css?family=Maitree:400,500,700|Proza+Libre:600);
-/*
-	STYLE.CSS:
-	One stylesheet to rule them all.
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro|Tinos|Playfair+Display+SC);
 
-	selector { property:value }
-
-*/
 html {
 	font-size: 62.5%
 }
-
-header {
+header, footer {
 	background-color: #592326; /*rose*/
-	height: 150px;
-	padding: 10px;
-	margin: auto;
 }
-
-footer {
-		background-color: #592326; /*rose*/
-		color: #d1a38d; /*taupe*/
-    font-family: 'Maitree', serif;
-		font-size: 1.6rem;
-		text-align: center;
-		height: 125px;
-		padding: 15px;
-		margin: auto;
+p, footer, #bottom-nav ul li a {
+  font-family: 'Tinos', serif;
 }
-nav {
-	background-color: #470f13; /*maroon*/
-}
-#top-nav {
+#top-nav, #bottom-nav, h1, footer {
 	text-align: center;
 }
-#top-nav ul {
+header, footer, #content, .wrapper {
+	margin: auto;
+}
+header, footer, .wrapper {
+	padding: 0;
+}
+header {
+	height: 120px;
+}
+
+#header-logo {
+	display: block;
+	margin: auto;
+	padding: 10px;
+}
+
+
+/*nav styling*/
+#top-nav, #bottom-nav {
+	background-color: #473333 /*maroon*/
+}
+#top-nav ul, #bottom-nav ul {
 	margin:0;
 	padding: 0;
 	list-style: none;
@@ -41,38 +41,84 @@ nav {
 }
 #top-nav ul li {
 	float: left;
-	padding: 17px 15px 12px 15px;
+	padding: 11px 12px 7px 12px;
 	display: block;
 }
 #top-nav ul li a {
+	font-family: 'Anonymous Pro', sans-serif;
 	font-size: 1.8rem;
 	color: #ffd1bb; /*cream*/
-  font-family: 'Maitree', serif;
+}
+#top-nav ul li a:hover, #bottom-nav ul li a:hover {
+	color: #c27b4e; /*tan*/
+}
+#bottom-nav ul li {
+	float: left;
+	padding: 6px 12px 2px 12px;
+	display: block;
+}
+#bottom-nav ul li a {
+	font-size: 1.5rem;
+	color: #ffd1bb; /*cream*/
+}
+a.current-nav-item {
+	border-top: 1px solid #d1a38d;
+	border-bottom: 1px solid #d1a38d;
+	border-left: none;
+	border-right: none;
+	padding: 1px;
+}
+a {
 	text-decoration: none;
 }
-
+/*  end nav styling */
 
 main {
 	background-color: #d1a38d; /*taupe*/
 }
 
-#content {
+#content { /*main content container*/
 	width: 990px;
 	min-height: 380px;
-	margin: auto;
 	padding: 10px 0;
 }
 
 .wrapper {
 	width: 960px;
-	margin: auto;
-	padding: 0;
 }
 
 h1 {
-	text-align: center;
-	font-size: 2.2rem;
-	font-family: 'Proza Libre', sans-serif;
+	font-size: 2.4rem;
+	font-family: 'Playfair Display SC', serif;
+	font-weight: 500;
 	color: #470f13; /*maroon*/
 	padding: 6px;
+}
+
+/* footer specific styling*/
+footer {
+		color: #d1a38d; /*taupe*/
+		font-size: 1.6rem;
+		height: 130px;
+}
+#address{
+	padding: 25px 0 5px 0;
+}
+.copyright-design {
+	padding: 5px 10px;
+}
+
+/* clearfix hack*/
+.float-left {
+	float: left;
+	margin-right: 10px;
+}
+.float-right {
+	float: right;
+	margin-left: 10px;
+}
+.clearfix:after {
+	content: " ";
+	display: table;
+	clear: both;
 }
